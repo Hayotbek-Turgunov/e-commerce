@@ -1,6 +1,7 @@
 import React from 'react'
 import './Navbar.css'
 import { IoCardOutline, IoMenu, IoSearch, IoHomeOutline } from 'react-icons/io5'
+import { FiShoppingCart } from "react-icons/fi";
 import { FaRegUser, FaRegHeart } from 'react-icons/fa'
 import { NavLink } from 'react-router-dom'
 
@@ -35,7 +36,7 @@ function Navbar() {
             <span>Saralangan</span>
           </NavLink>
           <NavLink to={'/cart'} className="navbar__item">
-            <IoCardOutline />
+            <FiShoppingCart />
             <span>Savatcha</span>
           </NavLink>
         </div>
