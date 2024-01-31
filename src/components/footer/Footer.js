@@ -5,7 +5,7 @@ import { FaInstagram, FaYoutube, FaTelegram, FaFacebook, FaApple, FaGooglePlay }
 
 function Footer() {
   return (
-    // Site-footer-start
+    // SITE-FOOTER-START
     <div className='footer'>
       <div className="container">
         <div className="footer__container">
@@ -80,10 +80,23 @@ function Footer() {
             </div>
           </div>
         </div>
-
         <hr />
+
+        {/* SITE-FOOTER-BOTTOM-START */}
+        <div className="footer__bottom">
+          <div className="footer__bottom-polisy">
+            <div className='footer__bottom-polisy-container'>
+              <a className='footer__bottom-polisy-link footer__container-title' href=""> Maxfiylik kelishuvi</a>
+              <a className='footer__bottom-polisy-link footer__container-title' href=""> Foydalanuvchi kelishuvi  </a>
+            </div>
+            <div className='footer__bottom-copyright'>
+              <p className='footer__bottom-copyright-text footer__container-link'> «2024© ООО «UZUM MARKET». ИНН 309376127. Все права защищены» </p>
+            </div>
+          </div>
+        </div>
       </div >
     </div >
+    //  SITE-FOOTER-END
   )
 }
 
