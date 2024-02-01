@@ -1,6 +1,7 @@
 /* SITE-FOOTER-TOP-START*/
 .footer {
-  margin-top: 50px;
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
 
 .footer__container {
@@ -118,6 +119,10 @@
 
   .footer__bottom-polisy-container {
     margin-bottom: 20px;
+  }
+
+  .footer__container-link {
+    white-space: wrap;
   }
 }
 
