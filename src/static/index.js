@@ -64,7 +64,7 @@ export const PRODUCTS = [
   },
   {
     _id: "pro-8",
-    title: "mol it qoy ot ",
+    title: "lorem ipsum dolor ipsum lorem ,ipsum lorem bir kishilik choyshab korish kerak",
     price: 718_000,
     category: "texnika",
     url: ["https://api.idea.uz/storage/products/June2022/pYWyv7Lzzcpio2hCz9LP.jpg"],
