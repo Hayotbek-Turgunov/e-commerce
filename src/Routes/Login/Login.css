@@ -65,4 +65,8 @@
   .login__wrapper {
     width: 300px;
   }
+
+  .login__form-label span {
+    font-size: 14px;
+  }
 }
