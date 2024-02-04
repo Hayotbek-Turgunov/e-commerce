@@ -6,6 +6,7 @@ import Login from './Routes/Login/Login';
 import Wishies from './Routes/Wishies/Wishies';
 import Cart from './Routes/Cart/Cart';
 import { PRODUCTS } from './static';
+import SingleRoute from './Routes/SingleRoute/SingleRoute';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path='/login' element={<Login />} />
         <Route path='/wishes' element={<Wishies />} />
         <Route path='/cart' element={<Cart />} />
+        <Route path='/product/:id' element={<SingleRoute data={PRODUCTS} />} />
       </Routes>
     </div>
   );
