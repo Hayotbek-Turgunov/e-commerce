@@ -164,6 +164,7 @@
 
   .navbar__collection {
     position: fixed;
+    z-index: 111;
     bottom: 0;
     left: 0;
     background-color: #fff;

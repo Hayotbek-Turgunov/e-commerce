@@ -18,7 +18,7 @@ function Login() {
                 <span>Parol</span>
                 <input className='login__form-input' type="text" placeholder='Parol' />
               </label>
-              <button className='login__form-button'>Kirish</button>
+              <button type='sumbit' className='login__form-button'>Kirish</button>
               <Link to={'/'} className='form__bottom-home'>Asosiy sahifaga qaytish</Link>
             </div>
           </form>
