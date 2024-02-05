@@ -8,13 +8,12 @@ import { addToWishies, removeFromWishies } from '../../context/wishiesSlice'
 import { Link } from 'react-router-dom';
 
 
-function Products({ data }) {
+function Products({ data, title }) {
   const dispatch = useDispatch()
   let wishes = useSelector(state => state.wishes.value)
   return (
     <div className='container'>
-      <h2 className='product__heading'>Arzon narxlar <span>&#10095;</span></h2>
-
+      <h2 className='product__heading'>Arzon narxlar<span>&#10095;</span></h2>
       <div className="wrapper">
         {
           data.map((el) => (
