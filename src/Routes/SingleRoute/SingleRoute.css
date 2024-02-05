@@ -158,14 +158,18 @@
 @media only screen and (max-width: 1135px) {
   .single__info-img-main {
     width: 300px;
-    height: 500px;
+    height: 440px;
+  }
+
+  .single {
+    margin-bottom: 100px;
   }
 }
 
 @media only screen and (max-width: 960px) {
   .single__info-img-main {
     width: 240px;
-    height: 400px;
+    height: 320px;
   }
 
 
@@ -187,7 +191,6 @@
   .single__info-img-container {
     width: 100%;
     display: flex;
-    justify-content: center;
   }
 
   .single__info-product {
@@ -200,5 +203,4 @@
     height: auto;
     object-fit: cover;
   }
-
 }
