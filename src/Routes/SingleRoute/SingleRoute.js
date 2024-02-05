@@ -18,7 +18,7 @@ function SingleRoute({ data }) {
         <div className="single__info">
           <div className="single__info-container">
             <div className="single__info-img-container">
-              <div className="single__info-navigatin-img">
+              <div className="single__info-navigation-img">
                 <div className="single__info-nav-item">
                   <img className='single__info-nav-item-img' src={cardItem.url[0]} alt="" />
                 </div>
