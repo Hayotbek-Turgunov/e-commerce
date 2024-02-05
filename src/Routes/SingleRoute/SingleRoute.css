@@ -194,8 +194,11 @@
     width: 100%;
   }
 
+
   .single__info-img-main {
     width: 100%;
+    height: auto;
     object-fit: cover;
   }
+
 }
