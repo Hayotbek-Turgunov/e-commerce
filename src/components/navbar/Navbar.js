@@ -4,14 +4,15 @@ import { IoCardOutline, IoMenu, IoSearch, IoHomeOutline } from 'react-icons/io5'
 import { FiShoppingCart } from "react-icons/fi";
 import { FaRegUser, FaRegHeart } from 'react-icons/fa'
 import { NavLink } from 'react-router-dom'
+import nav_logo from '../../assets/uzum logo.png'
+
 
 function Navbar() {
   return (
     <div className='container'>
       <div className="navbar">
         <NavLink to={'/'} className="navbar__logo">
-          {/* <img src="" alt="" /> */}
-          <h2>uzum market</h2>
+          <img className='navbar__logo-img' src={nav_logo} alt="" />
         </NavLink>
         <button className="navbar__category-btn">
           <IoMenu />

@@ -1,5 +1,6 @@
 import React from 'react'
 import './Products.css'
+import { CiHeart } from "react-icons/ci";
 import { FaRegHeart, FaHeart } from 'react-icons/fa'
 import { FiShoppingCart } from "react-icons/fi";
 import { useDispatch, useSelector } from 'react-redux';
@@ -25,11 +26,11 @@ function Products({ data }) {
                 {
                   wishes?.some((item) => item._id === el._id) ?
                     <div onClick={() => dispatch(removeFromWishies(el))} className="card__heart">
-                      <FaHeart />
+                      < FaHeart />
                     </div>
                     :
                     <div onClick={() => dispatch(addToWishies(el))} className="card__heart">
-                      <FaRegHeart />
+                      <CiHeart />
                     </div>
                 }
               </div>

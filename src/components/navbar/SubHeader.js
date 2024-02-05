@@ -1,18 +1,25 @@
 import React from 'react'
 import './Navbar.css'
+import { CiLocationOn } from "react-icons/ci";
 
 function SubHeader() {
   return (
     <div className='subheader'>
       <div className="container subheader__wrapper">
         <div className="subheader__item">
-          <p>Namangan gullari</p>
+          <CiLocationOn />
+          <p className='subheader__item-region '>
+            SHahar:
+            <span className='subheader__item-region-text'>
+              Namangan
+            </span>
+          </p>
         </div>
         <div className="subheader__item">
-          <p>Lorem ipsum dolor sit amet.</p>
+          <p>Buyurtmangizni bir kunda yetkazib beramiz</p>
         </div>
         <div className="subheader__item">
-          <p>Lorem ipsum dolor sit amet.</p>
+          <p>Buyurtmalarim</p>
         </div>
       </div>
     </div>

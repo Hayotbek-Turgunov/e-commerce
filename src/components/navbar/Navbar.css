@@ -13,6 +13,25 @@
   font-size: 14px;
 }
 
+.subheader__item {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.subheader__item svg {
+  font-size: 17px;
+}
+
+.subheader__item-region-text {
+  font-size: 15px;
+  text-decoration: underline;
+  margin-left: 5px;
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
+}
+
 .subheader__item:nth-child(2) {
   color: #888;
 }
@@ -31,6 +50,10 @@
 .navbar__logo {
   color: var(--bg-py);
   user-select: none;
+}
+
+.navbar__logo-img {
+  width: 280px;
 }
 
 .navbar__category-btn {
@@ -195,5 +218,9 @@
 
   .navbar__item span {
     display: none;
+  }
+
+  .navbar__logo-img {
+    width: 220px;
   }
 }
