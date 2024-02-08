@@ -7,6 +7,7 @@ import Wishies from './Routes/Wishies/Wishies';
 import Cart from './Routes/Cart/Cart';
 import { PRODUCTS } from './static';
 import SingleRoute from './Routes/SingleRoute/SingleRoute';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path='/cart' element={<Cart />} />
         <Route path='/product/:id' element={<SingleRoute data={PRODUCTS} />} />
       </Routes>
+      <Footer />
     </div>
   );
 }

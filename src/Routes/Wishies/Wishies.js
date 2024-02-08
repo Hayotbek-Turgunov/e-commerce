@@ -3,11 +3,12 @@ import Empty from '../../components/empty/Empty'
 import { useSelector } from 'react-redux'
 import Products from '../../components/products/Products';
 
+
 function Wishies() {
   let wishes = useSelector(state => state.wishes.value)
   console.log(wishes);
   return (
-    <div className='container'>
+    <div className='h-80'>
       {
         !wishes.length ?
           <Empty

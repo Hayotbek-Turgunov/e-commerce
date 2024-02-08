@@ -3,6 +3,7 @@ import './Products.css'
 import { CiHeart } from "react-icons/ci";
 import { FaRegHeart, FaHeart } from 'react-icons/fa'
 import { FiShoppingCart } from "react-icons/fi";
+import { incCart } from '../../context/cartSlice'
 import { useDispatch, useSelector } from 'react-redux';
 import { addToWishies, removeFromWishies } from '../../context/wishiesSlice'
 import { Link } from 'react-router-dom';
@@ -41,7 +42,7 @@ function Products({ data, title }) {
                     <del>{(el.price * 1.2)?.brm()} so'm</del>
                     <p>{el.price?.brm()} so'm</p>
                   </div>
-                  <div className='card__cart'>
+                  <div onClick={() => dispatch(incCart(el))} className='card__cart'>
                     <FiShoppingCart />
                   </div>
                 </div>
@@ -50,7 +51,7 @@ function Products({ data, title }) {
           ))
         }
       </div>
-    </div>
+    </div >
   )
 }
 

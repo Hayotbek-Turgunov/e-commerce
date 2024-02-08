@@ -1,13 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './SingleRoute.css'
 import { useParams } from 'react-router-dom'
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { IoAdd } from "react-icons/io5";
 import { RiSubtractFill } from "react-icons/ri";
 
+
 function SingleRoute({ data }) {
   const params = useParams()
   const cardItem = data.find((el) => el._id === params.id)
+
+
+
   console.log(cardItem);
 
 
@@ -77,6 +81,8 @@ function SingleRoute({ data }) {
         </div>
       </div>
     </div>
+
+
   )
 }
 
