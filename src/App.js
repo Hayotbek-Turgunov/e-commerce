@@ -8,11 +8,12 @@ import Cart from './Routes/Cart/Cart';
 import { PRODUCTS } from './static';
 import SingleRoute from './Routes/SingleRoute/SingleRoute';
 import Footer from './components/footer/Footer';
+import Products from './components/products/Products';
 
 function App() {
   return (
     <div className="App">
-      <NavbarMain />
+      <NavbarMain data={Products} />
       <Routes>
         <Route path='/' element={<Home data={PRODUCTS} />} />
         <Route path='/login' element={<Login />} />

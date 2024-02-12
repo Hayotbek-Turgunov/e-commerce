@@ -4,6 +4,7 @@ import { incCart, decCart, removeCart, removeAllCart } from '../../context/cartS
 import { Link } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 import { FaRegTrashAlt } from 'react-icons/fa'
+import CartForm from './CartForm'
 
 function CartProduct({ data }) {
 
@@ -40,21 +41,7 @@ function CartProduct({ data }) {
           ))}
         </div>
         <div className="cart__register">
-          <div className="input__reg">
-            <h3>Ma'lumotlarni to'ldiring:</h3>
-            <form action="">
-              <input type="text" placeholder="To'liq ismingiz" />
-              <input type="text" placeholder="+998 00-000-00-00" />
-              <input type="text" placeholder="Manzilingiz" />
-              <input required type="text" placeholder="Habar yo'llash" />
-              <div className="total">
-                <p>Umumiy narx:</p>
-                <p>Jami: {data.reduce((sum, item, index, arr) => sum + item.price * item.quantity, 0).brm()}</p>
-                console.log(data);
-              </div>
-              <button className="btn-reg"> Rasmiylashtirishga o'tish</button>
-            </form>
-          </div>
+          <CartForm data={data} />
         </div>
       </div>
     </div >

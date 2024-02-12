@@ -11,6 +11,10 @@ function SingleRoute({ data }) {
   const cardItem = data.find((el) => el._id === params.id)
 
 
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  })
+
 
   console.log(cardItem);
 
